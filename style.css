@@ -1,0 +1,203 @@
+ *{
+    margin: 0px;
+   
+ }
+
+ body {
+    font-family: system-ui ;
+    background-color: rgb(195, 223, 248);
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+ }
+
+ .test {
+    background-color: #eaeefc;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px #433d3d1b;
+    
+}
+ 
+.container {
+    max-height: 550px;
+    max-width: 900px;
+    display: contents;
+} 
+ 
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.choiceContainer{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+
+
+}
+
+.title {
+   color:  #a3218d;
+   
+   
+}
+ 
+ .winner {
+    color: #240503;
+    text-align: center;
+    font-size: small;
+ }
+ 
+
+  
+.subcontainer  {
+    height: 50vh;
+    width: 30vw; 
+    display: grid;
+    text-align: center; 
+    justify-content: center;
+     
+    margin-left: 3px;
+}
+
+.Choice {
+    height: 40vh;
+    width: 20vw;
+    background-color: #dfdbd562;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+#robot{
+    border-radius: 5%;
+	height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+
+
+ 
+
+#player-video {
+    border-radius: 5%;
+	height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #666;
+}
+
+.player-hand-container {
+    position: absolute;
+   top: 0%;
+   right: 0%;
+  
+}
+.player-hand {
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 42px;
+    line-height: 80px;
+  }
+
+  .player-hand-zoom {
+    animation: handZoom .5s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes handZoom {
+    0% { font-size: 42px; }
+    50% { font-size: 64px; }
+    100% { font-size: 42px; }
+  }
+
+  .timer-ring-circle {
+    transition: stroke-dashoffset 0.1s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+
+.robot-hand{
+    height: 65%;
+}
+
+ .imageComputer img {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+}
+
+.blueText, #playerScore {
+    color: rgb(0, 123, 255);
+}
+
+.greenText, #computerScore {
+    color: rgb(133, 241, 133);
+} 
+
+
+
+@media only screen and (max-width: 600px) {
+    .choiceContainer{
+        flex-direction: column;
+    }
+ body{
+    margin-left: 5%;
+    margin-right: 5%;
+
+    
+ }
+ .test{
+    padding: 0px;
+    margin: 0px;
+ }
+
+ 
+ .title{
+    font-size: 22px;
+    padding-bottom: 12px;
+ }
+
+ .subcontainer  {
+    height: 35vh;
+    width:  100%;
+    margin-bottom: 2px;
+    
+}
+.choicoContainer{
+    width: 100%;
+}
+.Choice {
+    height: 30vh;
+    width: 70vw;
+    position: relative;
+     
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 0px;
+}
+.gameContainer{
+    padding-top: 18px;
+}
+
+  }
